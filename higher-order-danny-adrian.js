@@ -65,3 +65,27 @@
 
 // console.log(onlyLetters.join(""))
 // // output: "nicework"
+
+// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
+
+// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+// // output: [58, "abcd", true]
+
+// const filterArray = filterArrayValues.filter((value) => {
+//     return !!value === false || !!value === false
+// })
+// console.log(filterArray)
+
+// Create a function that takes in an array of strings and returns an array of strings with every other letter capitalized.
+const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+// output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
+
+const capWords = (array) => {
+    return array.map((word) => {
+        word.map((char,index) => {
+            if(index % 2 !== 0)
+            return char.toUpperCase()
+        })
+    }) 
+}
+console.log(capWords(makesWackyWords))
