@@ -42,13 +42,83 @@
 //   false,
 //   "k"
 // ]
+// let newArr = []
+// const onlyNum = (array) => {
+//     for (let i=0; i <array.length; i++) {
+//         if (typeof array[i] == "string" ){
+//             newArr.push(array[i])
+//         }
+//     }    
+//     return newArr
+
+// }
+
+// console.log(onlyNum(comboArr).join(""))
+
+
+
 // // output: "nicework"
+
+
+
+
+
+
 // Create a function that takes in an array of numbers and returns the sum.
 // const addThese1 = [1, 2, 3, 4]
-// // output: 10
+// let newArr = []
+// let sum = 0
+// const addNum = (array) => {
+//     for( let i=0 ; i <array.length; i++){
+//         sum += array[i]
+//     }
+//     return sum
+// }
+// console.log(addNum(addThese1))
 
+// output: 10
+
+
+// output: 0
 // const addThese2 = []
-// // output: 0
+// let newArr = []
+// let sum = 0
+// const addNum = (array) => {
+//     for( let i=0 ; i <array.length; i++){
+//         sum += array[i]
+//     }
+//     return sum
+// }
+// console.log(addNum(addThese2))
+
+
+
+
+
+
+
 // Create a function that takes in an array of numbers and returns the index of the largest number.
-// const indexHighestNumber = [1, 4, 2, 3]
+const indexHighestNumber = [1, 4, 2, 3]
+let bigNum = []
+const largeNum = (array) => {
+    for (let i=0; i < array.length; i++) {
+        if (array[i] > bigNum) {
+           bigNum = array[i] 
+        }
+    }
+    return array.indexOf(bigNum)
+}
+
+console.log(largeNum(indexHighestNumber))
+
+
+
+
+
+
+
+
+
+
+
 // // output: 1
