@@ -49,15 +49,22 @@
 // console.log(describeProduct.product())
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
-const product = {
-  name: "chair",
-  price: 24.99
+// const product = {
+//   name: "chair",
+//   price: 24.99
+// }
+// const taxRate = 0.07
 
-const totalWithTax =  product.price() => {
 
-    return 
-}
-}
+// const totalPrice = totalWithTax(product) =>  {
+//   const taxRate = 0.07;
+//   const totalWithTax =  product.price + (product.price * taxRate); {
+//   return Math.round(totalWithTax * 100) / 100
+
+// }
+
+
+
 // const taxRate = 0.07; // 7% tax rate
 //     const totalPriceWithTax = product.price + (product.price * taxRate);
     
@@ -75,18 +82,38 @@ const totalWithTax =  product.price() => {
 //   ingredients: ["bread", "peanut butter", "banana"]
 // }
 // Write the code that accesses the ingredients property.
+// console.log(lunch.ingredients)
+
 // Write the code that access the third ingredient of the lunch object.
+// console.log(lunch.ingredients[2])
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"], 
+//   sandwich: function () {
+//     return "The ingredients for a" + " " + this.name + " " + this.type + " " + "are" + " " + this.ingredients + "." 
+//   }
+// }
+// console.log(lunch.sandwich())
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
 // Consider this variable:
 
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+const getCats = animals.map((value) =>  {
+  return value.type
+})
+console.log(animals)
+
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
