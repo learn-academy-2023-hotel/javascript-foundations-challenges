@@ -80,12 +80,42 @@
 const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
 // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
 
-const capWords = (array) => {
-    return array.map((word) => {
-        word.map((char,index) => {
-            if(index % 2 !== 0)
-            return char.toUpperCase()
-        })
-    }) 
-}
-console.log(capWords(makesWackyWords))
+// const everyOtherCaps = (arr) => {
+//     // 
+//      let lettersArray = arr
+//         .join(" ") //create one string
+//         .split("") // separate into individ chars
+    
+//       return lettersArray
+//         .map((letter, index) => {
+//           if (index % 2 !== 0) {
+//             return letter.toUpperCase()
+//           } else if (index % 2 === 0) {
+//             return letter
+//           }
+//         })
+//         .join("")
+//         .split(" ")
+//     }
+//     console.log(everyOtherCaps(makesWackyWords))
+
+    // Create a function that takes in a string and returns a new string with all the vowels removed.
+const str = "javascript is awesome"
+// output: "jvscrpt s wsm"
+
+// const removeVowels = (vowels)=> {
+//     const splitStr = vowels.split("")
+//     const onlyVowels = ["a", "e", "i", "o", "u"]
+//     const noVowels = splitStr.filter((letters) => {
+//     }) return !onlyVowels.includes(letters)
+//     }
+// console.log(removeVowels)
+
+const removeVowels = (inputString) => {
+    const vowels = "aeiou"
+    return inputString.split('').filter(char => !vowels.includes(char)).join('');
+  }
+//   const result = removeVowels(str);
+  console.log(removeVowels(str)); // Output: "jvscrpt s wsm"
+
+  
