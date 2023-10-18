@@ -65,3 +65,50 @@
 
 // console.log(onlyLetters.join(""))
 // // output: "nicework"
+
+// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+// // output: [58, "abcd", true]
+
+// const filterArray = filterArrayValues.filter((values) => {
+//     return !!values === true
+// })
+
+// console.log(filterArray)
+
+// const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+// // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
+
+
+// const everyOtherCaps = (arr) => {
+//     // 
+//      let lettersArray = arr
+//         .join(" ") //create one string
+//         .split("") // separate into individ chars
+    
+//       return lettersArray
+//         .map((letter, index) => {
+//           if (index % 2 !== 0) {
+//             return letter.toUpperCase()
+//           } else if (index % 2 === 0) {
+//             return letter
+//           }
+//         })
+//         .join("")
+//         .split(" ")
+//     }
+//     console.log(everyOtherCaps(makesWackyWords))
+
+// Create a function that takes in a string and returns a new string with all the vowels removed.
+
+const str = "javascript is awesome"
+
+// output: "jvscrpt s wsm"
+
+
+const removeVowels = (inputString) => {
+    const vowels = "aeiou"
+    return inputString.split('').filter(char => !vowels.includes(char)).join('')
+  }
+  
+  console.log(removeVowels(str))
+  
