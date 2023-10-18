@@ -29,14 +29,14 @@ const product = {
 // }
 // console.log(totalWithTax(product))
 
-const lunch = {
-    name: "PB and Banana",
-    type: "sandwich",
-    ingredients: ["bread", "peanut butter", "banana"],
-    sandwhich: function returnIngredients()  {
-        return `The ingredients for a PB and Banana sandwhich are ${lunch.ingredients[0]}, ${lunch.ingredients[1]}, and ${lunch.ingredients[2]}.`
-    }
-  }
+// const lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+//     sandwhich: function returnIngredients()  {
+//         return `The ingredients for a PB and Banana sandwhich are ${lunch.ingredients[0]}, ${lunch.ingredients[1]}, and ${lunch.ingredients[2]}.`
+//     }
+//   }
 //   Write the code that accesses the ingredients property.
 
 // console.log(lunch.ingredients)
@@ -49,3 +49,34 @@ const lunch = {
 // console.log(returnIngredients(lunch))
 //   Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // console.log(lunch.sandwhich())
+
+
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
+
+// Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+
+const onlyCats = animals.filter((value) => {
+    return value.type === "cat"
+})
+console.log(onlyCats)
+
+// Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+const getAllTheNames = animals.map((value) => {
+  return value.name
+})
+console.log(getAllTheNames)
+
+// Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
+const olderThan10 = animals.filter((value) => {
+  return value.age > 10
+})
+console.log(olderThan10)
+
+// Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
