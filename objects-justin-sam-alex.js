@@ -1,78 +1,78 @@
 // Consider this variable:
 
-const person = {
-  firstName: "Arthur",
-  lastName: "Dent",
-  homePlanet: "Earth",
-}
+// const person = {
+//   firstName: "Arthur",
+//   lastName: "Dent",
+//   homePlanet: "Earth",
+// }
 // Write the code that accesses the first name of the person object.
 
-console.log(person.firstName)
+// console.log(person.firstName)
 
-// Write the code that accesses the last name of the person object.
+// // Write the code that accesses the last name of the person object.
 
-console.log(person.lastName)
+// console.log(person.lastName)
 
-// Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
-// see variable above
-console.log(person)
+// // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
+// // see variable above
+// console.log(person)
 
-// Update the person object with a method that logs "Arthur Dent is from planet Earth".
+// // Update the person object with a method that logs "Arthur Dent is from planet Earth".
 
-const persDesc = (object) => {
-    return `${person.firstName} ${person.lastName} is from planet ${person.homePlanet}.`
-}
-console.log(persDesc(person))
+// const persDesc = (object) => {
+//     return `${person.firstName} ${person.lastName} is from planet ${person.homePlanet}.`
+// }
+// console.log(persDesc(person))
 
 // Consider this variable:
 
-const product = {
-  name: "chair",
-  price: 24.99
-}
+// const product = {
+//   name: "chair",
+//   price: 24.99
+// }
 
-// Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
+// // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
 
-const describeProduct = (value) => {
-    return `The product is a ${product.name}. It costs $${product.price}.`
-}
-console.log(describeProduct(product))
+// const describeProduct = (value) => {
+//     return `The product is a ${product.name}. It costs $${product.price}.`
+// }
+// console.log(describeProduct(product))
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 
-const totalWithTax = (value) => {
-    return (product.price * 1.07).toFixed(2)
-} // .toFixed() is limited the decimal places of the total returned. .toFixed(2) limits it to .00
-console.log(totalWithTax(product))
+// const totalWithTax = (value) => {
+//     return (product.price * 1.07).toFixed(2)
+// } // .toFixed() is limited the decimal places of the total returned. .toFixed(2) limits it to .00
+// console.log(totalWithTax(product))
 
-// Consider this variable:
+// // Consider this variable:
 
 
-const lunch = {
-    name: "PB and Banana",
-    type: "sandwich",
-    ingredients: ["bread", "peanut butter", "banana"],
-    finishedProduct: function () {
-        return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]}, ${this.ingredients[1]}, and ${this.ingredients[2]}.`
+// const lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+//     finishedProduct: function () {
+//         return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]}, ${this.ingredients[1]}, and ${this.ingredients[2]}.`
        // return this.name + this.type + this.ingredients
-    }
-  }
+  //   }
+  // }
 
 // Write the code that accesses the ingredients property.
 
-console.log(lunch.ingredients)
+// console.log(lunch.ingredients)
 
-// Write the code that access the third ingredient of the lunch object.
+// // Write the code that access the third ingredient of the lunch object.
 
-console.log(lunch.ingredients[2])
+// console.log(lunch.ingredients[2])
 
-// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 
-const recipe = (object) => {
-    return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients[0]}, ${lunch.ingredients[1]}, and ${lunch.ingredients[2]}.`
-}
+// const recipe = (object) => {
+//     return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients[0]}, ${lunch.ingredients[1]}, and ${lunch.ingredients[2]}.`
+// }
 
-console.log(recipe(lunch))
+// console.log(recipe(lunch))
 
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 
@@ -85,10 +85,35 @@ console.log(recipe(lunch))
 //        // return this.name + this.type + this.ingredients
 //     }
 //   }
-console.log(lunch.finishedProduct())
+// console.log(lunch.finishedProduct())
 
 
 // Consider this variable:
+
+// const animals = [
+//   { name: "Waffles", type: "dog", age: 7 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 }
+// ]
+
+// Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+
+// const catsOnly = (array) => {
+//   return array.filter((object) => {
+//     return (object.type === "cat")
+//   })
+// }
+// console.log(catsOnly(animals))
+
+// // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+// const onlyNames = (array) => {
+//   return array.map((object) => {
+//     return object.name
+//   })
+// }
+// console.log(onlyNames(animals))
 
 const animals = [
   { name: "Waffles", type: "dog", age: 7 },
@@ -96,14 +121,23 @@ const animals = [
   { name: "Spelunky", type: "dog", age: 4 },
   { name: "Hank", type: "cat", age: 11 }
 ]
-
-// Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
-
-
-
-// Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
+const animalAge = (array) => {
+  return array.filter((object) => {
+    return object.age >= 10
+  })
+}
+console.log(animalAge(animals))
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+
+const animalSentence = (array) => {
+  return array.map((object) => {
+    return `${object.name} is a ${object.type} that is ${object.age} years old.`
+  })
+}
+console.log(animalSentence(animals))
 // Consider this variable:
 
 // const author = {
