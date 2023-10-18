@@ -120,4 +120,4 @@ const smallerOfTheTwo = (smaller) => {
     }
 }
 
-// output: pass
+// output: passcode
