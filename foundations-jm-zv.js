@@ -43,13 +43,13 @@
 // Create a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
 // const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 
-// const extractLetters = (arr) => { 
-//     let letterString = ""; 
-//     for (let i = 0; i < arr.length; i++)
-//      { if (typeof arr[i] === "string") { letterString += arr[i]; } 
-//         } return letterString; } 
-//         const result = extractLetters(comboArr); 
-//         console.log(result); 
+const extractLetters = (arr) => { 
+    let letterString = ""; 
+    for (let i = 0; i < arr.length; i++)
+     { if (typeof arr[i] === "string") { letterString += arr[i]; } 
+        } return letterString; } 
+        const result = extractLetters(comboArr); 
+        console.log(result); 
 
 // // output: "nicework"
 
