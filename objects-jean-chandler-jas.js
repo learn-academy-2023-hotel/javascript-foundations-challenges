@@ -18,55 +18,27 @@
 // console.log(person.lastName)
 // console.log(person.getData())
 
-
-
-
-
-
-
-
-
 // Consider this variable:
 
-const product = {
-  name: "chair",
-  price: 24.99
-}
-// Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
-// Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
+// const product = {
+//   name: "chair",
+//   price: 24.99
+// }
+// // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
+// // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 
 
-const describeProduct = (object) => {
-  return `The product is a ${object.name} . It costs ${object.price}`
-}
-console.log(describeProduct(product))
+// const describeProduct = (object) => {
+//   return `The product is a ${object.name} . It costs ${object.price}`
+// }
+// console.log(describeProduct(product))
 
-const totalWithTax = (object) => {
-  return (object.price * .07 + object.price).toFixed(2)
+// const totalWithTax = (object) => {
+//   return (object.price * .07 + object.price).toFixed(2)
 
-}
+// }
 
-console.log(totalWithTax(product))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(totalWithTax(product))
 
 // Consider this variable:
 
@@ -76,8 +48,19 @@ const lunch = {
   ingredients: ["bread", "peanut butter", "banana"]
 }
 // Write the code that accesses the ingredients property.
+
+console.log(lunch.ingredients)
+
 // Write the code that access the third ingredient of the lunch object.
+
+console.log(lunch.ingredients[2])
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+const sandwich = (object) => {
+return `The ingredients for a ${object.name} ${object.type} are ${object.ingredients}`
+}
+console.log(sandwich(lunch))
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 
 
