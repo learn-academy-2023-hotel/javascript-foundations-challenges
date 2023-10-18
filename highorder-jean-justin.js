@@ -91,9 +91,10 @@ const vowelsRemoved = (array) => {
 }
 console.log(vowelsRemoved(str))
 
+return input.replace(/[aeiou]/gi, "")
+
 // // output: "jvscrpt s wsm"
 // Create a function that takes in a string containing numbers and returns an array with each number at its own index and converted to the data type of number.
 const stringOfNumbers = "4574328"
-
 
 // // output: [4, 5, 7, 4, 3, 2, 8]
