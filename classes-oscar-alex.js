@@ -69,7 +69,7 @@
 
 // Volume of a Cylinder: create a class for Cylinder
 
-class cylinder {
+class Cylinder {
     constructor(radiusNumber, heightNumber) {
         this.radius = radiusNumber
         this.height = heightNumber
@@ -79,12 +79,12 @@ class cylinder {
     }
 }
 
-let firstVol = new cylinder (2, 4)
+let firstVol = new Cylinder (2, 4)
 // console.log(firstVol.volume().toFixed(4))
 
-let cylOne = new cylinder (1, 5)
-let cylTwo = new cylinder (3, 6)
-let cylThree = new cylinder (5, 10)
+let cylOne = new Cylinder (1, 5)
+let cylTwo = new Cylinder (3, 6)
+let cylThree = new Cylinder (5, 10)
 console.log(cylOne)
 console.log(cylOne.volume().toFixed(4))
 console.log(cylTwo)
