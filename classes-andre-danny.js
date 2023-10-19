@@ -86,6 +86,7 @@
 
 // --------------------------------------------------------------
 // Volume of a Cylinder: create a class for Cylinder
+// Write a class that calculates the volume of a Cylinder: v = πr^2h (r is the radius and h is the height of the cylinder)
 const Pi = 3.14159265359
 class Cylinder {
     constructor(radius, height,) {
@@ -97,13 +98,18 @@ class Cylinder {
       return volume
     }
   }
-  const cylinderVol = new Cylinder(3,5)
-  console.log(cylinderVol.calcVol())
-// Write a class that calculates the volume of a Cylinder: v = πr^2h (r is the radius and h is the height of the cylinder)
-
+//   const cylinder1 = new Cylinder(3,5)
+//   console.log(cylinder1.calcVol())
 
 // Write the code that rounds the volume of the cylinder to four decimal places
-
-
+// calcVol(){
+//     let volume = Pi * (this.radius ** 2) * this.height
+//     return volume.toFixed(4)
 
 // Write the code that creates three unique cylinder objects
+const cylinder1 = new Cylinder(3,5)
+console.log(cylinder1.calcVol())
+const cylinder2 = new Cylinder(6,10)
+console.log(cylinder2.calcVol())
+const cylinder3 = new Cylinder(12,20)
+console.log(cylinder3.calcVol())
