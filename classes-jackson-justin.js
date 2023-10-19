@@ -69,3 +69,19 @@ class Coffee {
   // Log the double shot, hazelnut latte with almond milk's profile.
   console.log(hazel.latteProfile())
 //   caramel latte with whole and 1 shot.
+
+// Volume of a Cylinder: create a class for Cylinder
+// Write a class that calculates the volume of a Cylinder: v = πr^2h (r is the radius and h is the height of the cylinder)
+class Cylinder {
+  constructor (volumeNumber, radiusNumber, heightNumber) {
+    this.volume = volumeNumber
+    this.radius = radiusNumber
+    this.height = heightNumber
+  }
+  formula() {
+    return this.volume = (3.14 * this.radius)^(2 * this.height)
+  }
+}
+
+// Write the code that rounds the volume of the cylinder to four decimal places
+// Write the code that creates three unique cylinder objects
