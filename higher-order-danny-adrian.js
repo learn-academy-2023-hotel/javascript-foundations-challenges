@@ -66,19 +66,6 @@
 // console.log(onlyLetters.join(""))
 // // output: "nicework"
 
-// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-
-// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
-// // output: [58, "abcd", true]
-
-// const filterArray = filterArrayValues.filter((value) => {
-//     return !!value === false || !!value === false
-// })
-// console.log(filterArray)
-
-// Create a function that takes in an array of strings and returns an array of strings with every other letter capitalized.
-const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
-// output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
 
 // const everyOtherCaps = (arr) => {
 //     // 
@@ -99,23 +86,5 @@ const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
 //     }
 //     console.log(everyOtherCaps(makesWackyWords))
 
-    // Create a function that takes in a string and returns a new string with all the vowels removed.
-const str = "javascript is awesome"
-// output: "jvscrpt s wsm"
-
-// const removeVowels = (vowels)=> {
-//     const splitStr = vowels.split("")
-//     const onlyVowels = ["a", "e", "i", "o", "u"]
-//     const noVowels = splitStr.filter((letters) => {
-//     }) return !onlyVowels.includes(letters)
-//     }
-// console.log(removeVowels)
-
-const removeVowels = (inputString) => {
-    const vowels = "aeiou"
-    return inputString.split('').filter(char => !vowels.includes(char)).join('');
-  }
-//   const result = removeVowels(str);
-  console.log(removeVowels(str)); // Output: "jvscrpt s wsm"
 
   
