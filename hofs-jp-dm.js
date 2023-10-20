@@ -27,12 +27,32 @@
 
 // Create a function that takes in a string of multiple words and returns an array with only the words that have an odd number of characters.
 
-const pumbaa =
-  "Hakuna Matata what a wonderful phrase Hakuna Matata ain't no passing craze"
+// const pumbaa =
+//   "Hakuna Matata what a wonderful phrase Hakuna Matata ain't no passing craze"
 
-  const onlyOdd = pumbaa.sort((value) => {
-    return value.length % 2 !== 0
-  })
-  console.log(pumbaa % 2)
+//   const getWordsdWithOddLength = (inputString) => {
+//     const words = inputString.split(" ")
 
-// output: ["a", "wonderful", "ain't", "passing", "craze"]
+//     const oddLengthWords = words.filter(word => word.length % 2 !== 0)
+
+//   return oddLengthWords
+//   }
+// const result = getWordsdWithOddLength(pumbaa)
+
+// console.log(result)
+
+  // output: ["a", "wonderful", "ain't", "passing", "craze"]
+
+//  Create a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
+
+const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+
+const niceWork = (array) => {
+  return array.filter((value) => {
+    return typeof value === "string"
+  }).join()
+}
+console.log(niceWork(comboArr))
+
+
+// output: "nicework"
